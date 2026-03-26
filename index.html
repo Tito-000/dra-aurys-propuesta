@@ -34,7 +34,10 @@
     @keyframes shimmer { 0% { transform: translate(0,0); } 100% { transform: translate(-5%,5%); } }
 
     .cover-left { display: flex; flex-direction: column; justify-content: center; padding: 80px 70px; position: relative; z-index: 2; }
-    .cover-right { position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .cover-right { position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-direction: column; gap: 20px; }
+    .cover-photo { width: 280px; height: 280px; border-radius: 50%; object-fit: cover; border: 4px solid rgba(181,148,58,0.4); box-shadow: 0 40px 80px rgba(0,0,0,0.4); }
+    .cover-name { font-size: 18px; font-weight: 500; color: var(--white); font-family: 'Cormorant Garamond'; letter-spacing: 0.05em; }
+    .cover-title-sub { font-size: 13px; color: rgba(255,255,255,0.4); letter-spacing: 2px; text-transform: uppercase; }
     .cover-right::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at center, transparent 30%, var(--green-deep) 100%); z-index: 1; pointer-events: none; }
     .cover-photo { width: 280px; height: 280px; border-radius: 50%; object-fit: cover; border: 4px solid rgba(181,148,58,0.3); box-shadow: 0 40px 80px rgba(0,0,0,0.5); position: relative; z-index: 2; }
     .cover-dr-name-badge { position: relative; z-index: 2; text-align: center; margin-top: 24px; }
@@ -168,7 +171,13 @@
     <p class="cover-sub">Una estrategia integral de contenido, Google Ads y Meta Ads diseñada para <strong>atraer pacientes de alto valor</strong> a tu consultorio de cirugía plástica.</p>
     <p class="cover-date">Marzo 2026 — Por Martin Mercedes</p>
   </div>
-  <div class="cover-right"></div>
+  <div class="cover-right">
+    <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_900/u_https://assets.cdn.filesafe.space/35VKsny1Wm9tODTzqbd5/media/67a901da9769a77ca36178e4.png" alt="Dra. Aurys Mercedes" class="cover-photo">
+    <div style="text-align: center;">
+      <p class="cover-name">Dra. Aurys Mercedes</p>
+      <p class="cover-title-sub">Cirujana Plástica Certificada</p>
+    </div>
+  </div>
 </section>
 
 <!-- 01: DIAGNÓSTICO -->
