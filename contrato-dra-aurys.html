@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contrato de Servicios — Dra. Aurys Mercedes</title>
+  <style>
+    :root {
+      --green-deep: #1e3329;
+      --gold: #b5943a;
+      --cream: #f8f6f1;
+      --text-dark: #1a2318;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--cream); color: var(--text-dark); line-height: 1.7; }
+
+    .download-bar { text-align: center; padding: 20px; background: var(--green-deep); position: sticky; top: 0; z-index: 100; }
+    .download-btn { display: inline-block; background: linear-gradient(135deg, var(--gold), #d4af6a); color: var(--green-deep); padding: 14px 40px; border-radius: 100px; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; border: none; font-family: inherit; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .download-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(181,148,58,0.3); }
+
+    .contract { max-width: 900px; margin: 40px auto; background: white; padding: 60px 50px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-radius: 8px; }
+
+    h1 { font-size: 28px; color: var(--green-deep); margin-bottom: 8px; text-align: center; }
+    .subtitle { text-align: center; color: #666; font-size: 14px; margin-bottom: 40px; letter-spacing: 0.05em; }
+
+    .section { margin-bottom: 32px; }
+    .section-title { font-size: 16px; font-weight: 700; color: var(--green-deep); text-transform: uppercase; margin-bottom: 16px; letter-spacing: 0.05em; border-bottom: 2px solid var(--gold); padding-bottom: 8px; }
+
+    p { margin-bottom: 12px; text-align: justify; }
+    strong { color: var(--text-dark); }
+
+    .terms { background: #f9f9f9; padding: 20px; border-radius: 6px; margin: 20px 0; border-left: 4px solid var(--gold); }
+    .terms li { margin-bottom: 10px; }
+
+    .pricing-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+    .pricing-table th { background: var(--green-deep); color: white; padding: 12px; text-align: left; font-weight: 600; }
+    .pricing-table td { padding: 12px; border-bottom: 1px solid #eee; }
+    .pricing-table tr:last-child td { border-bottom: none; }
+    .pricing-table .price { color: var(--gold); font-weight: 700; font-size: 18px; }
+
+    .total { background: var(--green-deep); color: white; padding: 20px; border-radius: 6px; text-align: center; margin: 30px 0; }
+    .total-label { font-size: 14px; opacity: 0.9; }
+    .total-price { font-size: 48px; font-weight: 700; color: var(--gold); }
+
+    .signatures { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 60px; page-break-inside: avoid; }
+    .sig-block { text-align: center; }
+    .sig-line { border-top: 2px solid var(--text-dark); margin-top: 40px; padding-top: 8px; }
+    .sig-name { font-weight: 600; }
+
+    .footer { text-align: center; color: #999; font-size: 12px; margin-top: 40px; }
+
+    @media print {
+      body { background: white; }
+      .download-bar { display: none; }
+      .contract { box-shadow: none; max-width: 100%; }
+      .signatures { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="download-bar">
+  <button class="download-btn" onclick="window.print()">Descargar contrato en PDF</button>
+</div>
+
+<div class="contract">
+
+  <h1>CONTRATO DE SERVICIOS DE MARKETING DIGITAL</h1>
+  <p class="subtitle">Flexo Media · Marketing para Profesionales de Salud</p>
+
+  <!-- PARTES -->
+  <div class="section">
+    <div class="section-title">1. Partes Contratantes</div>
+    <p><strong>PROVEEDOR:</strong> Martin Mercedes, operando bajo "Flexo Media", agencia de marketing digital especializada en profesionales del sector salud.</p>
+    <p><strong>CLIENTE:</strong> Dra. Aurys Mercedes</p>
+  </div>
+
+  <!-- SERVICIOS -->
+  <div class="section">
+    <div class="section-title">2. Servicios Incluidos</div>
+    <p>El cliente contrata el siguiente paquete de servicios de marketing digital integral:</p>
+    <div class="terms">
+      <ul>
+        <li><strong>Página Web Profesional:</strong> Diseño responsivo optimizado para conversión, con formulario de contacto, galería de resultados y WhatsApp flotante.</li>
+        <li><strong>Google Ads & Meta Ads:</strong> Campañas de captación diseñadas para agendar citas. Objetivo: leads de consulta.</li>
+        <li><strong>CRM GoHighLevel:</strong> Sistema de automatización de leads, follow-up automático vía WhatsApp, y seguimiento de pacientes.</li>
+        <li><strong>Gestión de Redes Sociales:</strong> Calendario editorial, posting (Instagram y Facebook), y engagement básico.</li>
+        <li><strong>Asesoría Estratégica:</strong> Reuniones mensuales para revisar métricas y ajustar estrategia según resultados.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- INVERSIÓN -->
+  <div class="section">
+    <div class="section-title">3. Inversión Mensual</div>
+    <p>El cliente se compromete a pagar mensualmente por los servicios listados:</p>
+    <table class="pricing-table">
+      <thead>
+        <tr>
+          <th>Concepto</th>
+          <th>Precio Unitario</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Gestión de Marketing Digital (diseño, estrategia, CRM)</td>
+          <td class="price">$500</td>
+          <td class="price">$500</td>
+        </tr>
+        <tr>
+          <td><em style="font-size: 12px; color: #666;">Nota: La pauta de anuncios (Google Ads, Meta Ads) se gestiona separadamente. Recomendado: $300–$500/mes iniciales.</em></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="total">
+      <div class="total-label">Inversión Mensual en Gestión</div>
+      <div class="total-price">$500</div>
+      <div style="font-size: 13px; margin-top: 12px; opacity: 0.9;">+ Presupuesto de pauta de anuncios (aparte)</div>
+    </div>
+  </div>
+
+  <!-- DURACIÓN -->
+  <div class="section">
+    <div class="section-title">4. Plazo del Contrato</div>
+    <p>El presente contrato tendrá una duración inicial de <strong>3 meses</strong>, renovable automáticamente por períodos mensuales de mutuo acuerdo. Cualquiera de las partes puede rescindir el contrato con <strong>30 días de preaviso</strong> antes del vencimiento.</p>
+  </div>
+
+  <!-- METODOLOGÍA -->
+  <div class="section">
+    <div class="section-title">5. Metodología de Trabajo</div>
+    <div class="terms">
+      <ul>
+        <li>Mes 1: Setup completo (página web, CRM, campañas iniciales, auditoría de marca).</li>
+        <li>Mes 2 en adelante: Optimización basada en datos. Ajustes semanales de campañas, análisis de ROI.</li>
+        <li>Reportes mensuales: Métricas, leads generados, costo por lead, y recomendaciones.</li>
+        <li>Reuniones de seguimiento: Una reunión mensual de 30 minutos para revisar resultados.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- RESPONSABILIDADES -->
+  <div class="section">
+    <div class="section-title">6. Responsabilidades del Cliente</div>
+    <div class="terms">
+      <ul>
+        <li>Proporcionar contenido, fotos y videos de calidad profesional cuando sea requerido.</li>
+        <li>Responder a consultas y leads dentro de 24 horas.</li>
+        <li>Mantener acceso a cuentas (Instagram, Facebook, Google, Meta).</li>
+        <li>Comunicar cambios en servicios o limitaciones médico-legales que afecten la publicidad.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- GARANTÍAS -->
+  <div class="section">
+    <div class="section-title">7. Garantías y Limitaciones</div>
+    <p>Martin Mercedes se compromete a ejecutar los servicios de acuerdo a estándares de la industria y mejores prácticas en marketing digital. Sin embargo, <strong>no garantiza resultados específicos</strong> en términos de número de pacientes, dado que los resultados dependen de múltiples factores (competencia, mercado, algoritmos de redes sociales, etc.).</p>
+    <p>Se asegura un esfuerzo máximo en optimización y análisis continuo para maximizar ROI.</p>
+  </div>
+
+  <!-- PAGOS -->
+  <div class="section">
+    <div class="section-title">8. Términos de Pago</div>
+    <div class="terms">
+      <ul>
+        <li>Monto: $500/mes (servicios de gestión únicamente).</li>
+        <li>Vencimiento: Primer día de cada mes.</li>
+        <li>Forma de pago: Transferencia bancaria, PayPal, o acuerdo previo.</li>
+        <li>Retraso: Pagos retrasados más de 15 días suspenderán el servicio hasta regularizar.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CONFIDENCIALIDAD -->
+  <div class="section">
+    <div class="section-title">9. Confidencialidad</div>
+    <p>Ambas partes se comprometen a mantener en confidencialidad cualquier información sensible (datos de pacientes, información financiera, estrategia competitiva) que se comparta durante la prestación de servicios.</p>
+  </div>
+
+  <!-- TERMINACIÓN -->
+  <div class="section">
+    <div class="section-title">10. Terminación</div>
+    <p>Cualquiera de las partes puede rescindir este contrato con <strong>30 días de notificación escrita</strong> (por correo o WhatsApp). Al finalizar, Martin Mercedes entregará acceso a todas las cuentas y datos generados durante el contrato.</p>
+  </div>
+
+  <!-- FIRMAS -->
+  <div class="section">
+    <div class="signatures">
+      <div class="sig-block">
+        <p style="text-align: left; margin-bottom: 4px;">PROVEEDOR</p>
+        <div class="sig-line"></div>
+        <div class="sig-name">Martin Mercedes</div>
+        <div style="font-size: 12px; color: #666;">Flexo Media</div>
+        <div style="font-size: 12px; color: #666;">Fecha: _______________</div>
+      </div>
+      <div class="sig-block">
+        <p style="text-align: left; margin-bottom: 4px;">CLIENTE</p>
+        <div class="sig-line"></div>
+        <div class="sig-name">Dra. Aurys Mercedes</div>
+        <div style="font-size: 12px; color: #666;">Fecha: _______________</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Este contrato fue generado el 26 de Marzo de 2026.<br>Flexo Media · Agencia de Marketing Digital · República Dominicana</p>
+  </div>
+
+</div>
+
+</body>
+</html>
